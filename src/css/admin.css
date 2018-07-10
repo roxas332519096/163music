@@ -1,0 +1,152 @@
+body{
+    position: relative;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+}
+
+/* aside */
+
+aside {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.newSong {
+    padding: 10px;
+    text-align: center;
+}
+
+.newSong.active {
+    background: #d4d4d4;
+}
+
+.songList-container {
+    flex-grow: 1;
+}
+    
+
+.songList {
+    text-align: left;
+    border-top: 1px solid #999;
+}
+
+.songList > li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.songList > li.active{
+    background: #d4d4d4;
+}
+
+.draggable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    border-radius: 4px;
+    border: 2px dashed #ddd;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+/* main */
+
+main {
+    padding-top: 20px;
+    padding-left: 20px;
+    flex-grow: 1;
+    background: #d4d4d4;
+}
+
+.form {
+    font-size: 14px;
+}
+
+.form > .row {
+    margin: 10px 0;
+}
+
+.form > .row label{
+    display: inline-block;
+    width: 4em;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.form > .row.actions{
+    margin-left: calc(4em + 5px + 4.14999px);
+}
+
+.form  input[type=text] {
+    padding: 3px 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    height: 30px;
+}
+
+.form input[type=button],
+.form input[type=submit],
+.form button{
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* loading */
+
+.loadingcover {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    z-index: 1;
+    top:0;
+    left: 0;
+}
+
+.loadingcover.active{
+    display: flex;
+}
+
+.loadingcover .loading{
+    font-size: 30px;
+}
+
+.updatecover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    width: 200px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    z-index: 1;
+    cursor: not-allowed;
+}
+
+.updatecover.active{
+    display: flex;
+}

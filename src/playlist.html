@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>云音乐</title>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="//at.alicdn.com/t/font_735148_vf5gw07pt7f.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/playlist.css">
+    <script>
+        var pageWidth = window.innerWidth;
+        document.write('<style>html{font-size:'+ pageWidth/10 +'px;}</style>');
+    </script>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="title-conainer">
+                <div class="cover">
+                    <img src="#" alt="">
+                    <span class="tag">歌单</span>
+                </div>
+                <span class="title">名字</span>
+            </div>
+        </header>
+        <div class="summry-container">
+            <div class="tag">标签:</div>
+            <div class="summry">
+                简介: 年少的喜欢没有
+            </div>
+        </div>
+        <div class="songslist">
+            <h1>歌曲列表</h1>
+            <ul>
+               
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <a href="#">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-wangyiyunyinle"></use>
+            </svg>
+            收藏歌单
+        </a>
+    </footer>
+    <script src="../node_modules/leancloud-storage/dist/av-min.js"></script>
+    <script src="./js/initializers/av.js"></script>
+    <script src="./js/event-hub.js"></script>
+    <script src="./js/playlist/playlist.js"></script>
+    <script src="./js/playlist/songlist.js"></script>
+</body>
+</html>
