@@ -6,20 +6,5 @@
     appId: APP_ID,
     appKey: APP_KEY
     });
-    /*
-    //创建数据库
-    let TestObject = AV.Object.extend('Playlist');
-    //创建一条记录
-    let testObject = new TestObject();
-    //保存记录
-    testObject.save({
-    name: 'test',
-    cover: 'url',
-    creatorId: 'id',
-    description: 'test',
-    songs: ['1','2','3']
-    }).then(function(object) {
-    alert('数据提交成功!');
-    })
-    */
+
 }
